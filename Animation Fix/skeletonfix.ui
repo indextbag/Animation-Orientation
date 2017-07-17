@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SkeletonFix</class>
+ <widget class="QDialog" name="SkeletonFix">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>822</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>822</width>
+    <height>447</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>822</width>
+    <height>447</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Skeleton Fix</string>
+  </property>
+  <widget class="QPushButton" name="reoirentTarget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reoirent Target</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dismiss">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>420</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dismiss</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="transferAnimation">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>420</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Transfer Animation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mocapLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>-10</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Mocap Joints</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="targetLabel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>-10</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Target Joints</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="mocapList">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>291</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="dragEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="dragDropMode">
+    <enum>QAbstractItemView::InternalMove</enum>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="targetList">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>291</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="dragEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="dragDropMode">
+    <enum>QAbstractItemView::InternalMove</enum>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setMocap">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Mocap</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setTarget">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>30</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Target</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mocapJointCount">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Joint
+Count: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="targetJointCount">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>110</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Joint
+Count: </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeJoint">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>420</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remove Joint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mocapAddJoint">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Joint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="targetAddJoint">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>70</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Joint</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
